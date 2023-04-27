@@ -11,35 +11,35 @@ export default function TopNavBar() {
         <ul className="flex justify-start ">
           <li className="mx-10 flex-shrink-0">
             <Link href="/">
-              <a className="hover:text-gray-20 font-medium text-white">Home</a>
+              <p className="hover:text-gray-20 font-medium text-white">Home</p>
             </Link>
           </li>
           <li className="mx-10 flex-shrink-0">
             <Link href="/components/Advantage">
-              <a className="font-medium text-white hover:text-gray-200">
+              <p className="font-medium text-white hover:text-gray-200">
                 Advantage
-              </a>
+              </p>
             </Link>
           </li>
           <li className="mx-10 flex-shrink-0">
             <Link href="/components/RoadMap">
-              <a className="font-medium text-white hover:text-gray-200">
+              <p className="font-medium text-white hover:text-gray-200">
                 RoadMap
-              </a>
+              </p>
             </Link>
           </li>
           <li className="mx-10 flex-shrink-0">
             <Link href="/components/Partner">
-              <a className="font-medium text-white hover:text-gray-200">
+              <p className="font-medium text-white hover:text-gray-200">
                 Partner
-              </a>
+              </p>
             </Link>
           </li>
           <li className="mx-10 flex-shrink-0 ">
             <Link href="/components/Community">
-              <a className="font-medium text-white hover:text-gray-200">
+              <p className="font-medium text-white hover:text-gray-200">
                 Community
-              </a>
+              </p>
             </Link>
           </li>
         </ul>
