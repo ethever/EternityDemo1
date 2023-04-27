@@ -68,7 +68,7 @@ function AppBar() {
       </Navbar.Brand>
       <Navbar.Content enableCursorHighlight hideIn="xs" variant="default">
         {collapseItems.map((item) => (
-          <Navbar.Link key={item.title} href={item.href}>
+          <Navbar.Link as={Link} key={item.title} href={`#${item.href}`}>
             {item.title}
           </Navbar.Link>
         ))}
@@ -88,7 +88,7 @@ function AppBar() {
               css={{
                 minWidth: '100%',
               }}
-              href={item.href}
+              href={`#${item.href}`}
             >
               {item.title}
             </Link>
