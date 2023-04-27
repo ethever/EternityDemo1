@@ -1,6 +1,7 @@
 import { Text } from '@nextui-org/react'
 import Container from './Container'
 import FigureCard from './FigureCard'
+import SectionTitle from './SectionTitle'
 
 const s = [
   {
@@ -41,18 +42,7 @@ export default function Community() {
         backgroundColor: '#e4e4e4',
       }}
     >
-      <Text
-        h1
-        css={{
-          color: 'black',
-          display: 'grid',
-          placeContent: 'center',
-          placeSelf: 'center',
-          padding: '100px 0',
-        }}
-      >
-        Community Impact
-      </Text>
+      <SectionTitle title="Community Impact" />
       <Container
         display="flex"
         wrap="nowrap"
