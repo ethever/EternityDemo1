@@ -1,11 +1,17 @@
 import { Text } from '@nextui-org/react'
 
-export default function SectionTitle({ title }: { title: string }) {
+export default function SectionTitle({
+  title,
+  color,
+}: {
+  title: string
+  color?: string
+}) {
   return (
     <Text
       h1
       css={{
-        color: 'black',
+        color: color ?? 'black',
         display: 'grid',
         placeContent: 'center',
         placeSelf: 'center',
