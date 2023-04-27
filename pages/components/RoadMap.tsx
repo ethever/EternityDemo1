@@ -1,6 +1,7 @@
 import { Chrono } from 'react-chrono'
 import Container from './Container'
 import SectionTitle from './SectionTitle'
+import { roadmapId } from '../../src/constants'
 
 const items = [
   {
@@ -46,7 +47,11 @@ export default function RoadMap() {
         backgroundPosition: 'center calc(100% + 200px)',
       }}
     >
-      <SectionTitle color="white" title="Development Roadmap" />
+      <SectionTitle
+        sectionId={roadmapId}
+        color="white"
+        title="Development Roadmap"
+      />
     </Container>
   )
   return <HorizontalTimeline />

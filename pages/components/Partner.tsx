@@ -3,6 +3,7 @@ import Container from './Container'
 import SectionTitle from './SectionTitle'
 import { Grid, styled } from '@nextui-org/react'
 import Image from 'next/image'
+import { partnerId } from '../../src/constants'
 
 const logos = () => {
   const t = []
@@ -20,7 +21,7 @@ export default function Partner() {
         paddingBottom: '100px',
       }}
     >
-      <SectionTitle title="Cooperative Partner" />
+      <SectionTitle sectionId={partnerId} title="Cooperative Partner" />
       <Grid.Container justify="center">
         {logos().map((logo) => (
           <Grid key={logo}>

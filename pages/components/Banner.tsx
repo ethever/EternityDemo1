@@ -1,9 +1,11 @@
 import { Card, Row, Text, Button } from '@nextui-org/react'
 import Container from './Container'
+import { firstSectionId } from '../../src/constants'
 
 export default function Banner() {
   return (
     <Container
+      id={firstSectionId}
       css={{
         backgroundImage: "url('/images/background.png')",
         height: '100vh',

@@ -1,5 +1,6 @@
 import { Container, Text } from '@nextui-org/react'
 import SectionTitle from './SectionTitle'
+import { advantagesId } from '../../src/constants'
 
 function Card({
   imageUrl,
@@ -12,10 +13,11 @@ function Card({
 }) {
   return (
     <Container
+      display="inline-flex"
       wrap="nowrap"
       css={{
         gap: '2px',
-        display: 'flex',
+        width: 'min-content',
         flexDirection: 'column',
         justifyContent: 'flex-start',
         alignItems: 'center',
@@ -70,13 +72,13 @@ const advantages = [
 export default function Advantage() {
   return (
     <Container lg>
-      <SectionTitle title="Our Advantages" />
+      <SectionTitle sectionId={advantagesId} title="Our Advantages" />
       <Container
-        wrap="nowrap"
         css={{
           display: 'flex',
           flexDirection: 'row',
           gap: '180px',
+          flexWrap: 'wrap',
         }}
       >
         {advantages.map((a) => (

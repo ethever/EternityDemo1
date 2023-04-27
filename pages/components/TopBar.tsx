@@ -1,7 +1,34 @@
 import * as React from 'react'
 import { Navbar, Button, Link } from '@nextui-org/react'
+import {
+  advantagesId,
+  firstSectionId,
+  partnerId,
+  roadmapId,
+} from '../../src/constants'
 
-const collapseItems = ['首页', '特色', '开发路线', '合作伙伴', '社区']
+const collapseItems = [
+  {
+    title: '首页',
+    href: firstSectionId,
+  },
+  {
+    title: '特色',
+    href: advantagesId,
+  },
+  {
+    title: '开发路线',
+    href: roadmapId,
+  },
+  {
+    title: '合作伙伴',
+    href: partnerId,
+  },
+  {
+    title: '社区',
+    href: '#',
+  },
+]
 
 function AppBar() {
   return (
@@ -40,13 +67,11 @@ function AppBar() {
         </svg>
       </Navbar.Brand>
       <Navbar.Content enableCursorHighlight hideIn="xs" variant="default">
-        <Navbar.Link href="#">首页</Navbar.Link>
-        <Navbar.Link isActive href="#">
-          特色
-        </Navbar.Link>
-        <Navbar.Link href="#">开发路线</Navbar.Link>
-        <Navbar.Link href="#">合作伙伴</Navbar.Link>
-        <Navbar.Link href="#">社区</Navbar.Link>
+        {collapseItems.map((item) => (
+          <Navbar.Link key={item.title} href={item.href}>
+            {item.title}
+          </Navbar.Link>
+        ))}
       </Navbar.Content>
       <Navbar.Content>
         <Navbar.Item>
@@ -56,16 +81,16 @@ function AppBar() {
         </Navbar.Item>
       </Navbar.Content>
       <Navbar.Collapse>
-        {collapseItems.map((item, index) => (
-          <Navbar.CollapseItem key={item}>
+        {collapseItems.map((item) => (
+          <Navbar.CollapseItem key={item.title}>
             <Link
               color="inherit"
               css={{
                 minWidth: '100%',
               }}
-              href="#"
+              href={item.href}
             >
-              {item}
+              {item.title}
             </Link>
           </Navbar.CollapseItem>
         ))}
