@@ -15,6 +15,7 @@ const logos = () => {
 export default function Partner() {
   return (
     <Container
+      xl
       css={{
         paddingBottom: '100px',
       }}

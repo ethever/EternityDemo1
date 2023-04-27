@@ -36,7 +36,6 @@ export default function Community() {
       css={{
         padding: '0 0 100px 0',
         backgroundImage: "url('/images/community-bg.png')",
-        width: '100%',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundColor: '#e4e4e4',
