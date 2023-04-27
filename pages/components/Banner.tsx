@@ -1,9 +1,9 @@
-import { Container, Card, Row, Text, Button } from '@nextui-org/react'
+import { Card, Row, Text, Button } from '@nextui-org/react'
+import Container from './Container'
 
 export default function Banner() {
   return (
     <Container
-      fluid
       css={{
         backgroundImage: "url('/images/background.png')",
         height: '100vh',

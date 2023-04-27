@@ -28,9 +28,6 @@ dependencies:
   '@rainbow-me/rainbowkit':
     specifier: ^0.1.0
     version: 0.1.2(@types/react@17.0.38)(ethers@5.7.2)(react-dom@18.2.0)(react@18.2.0)(wagmi@0.3.5)
-  '@types/prop-types':
-    specifier: ^15.7.5
-    version: 15.7.5
   ethers:
     specifier: ^5.6.6
     version: 5.7.2
@@ -54,6 +51,9 @@ devDependencies:
   '@types/node':
     specifier: 17.0.4
     version: 17.0.4
+  '@types/prop-types':
+    specifier: ^15.7.5
+    version: 15.7.5
   '@types/react':
     specifier: 17.0.38
     version: 17.0.38
