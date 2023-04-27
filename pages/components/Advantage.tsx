@@ -17,14 +17,16 @@ function Card({
         gap: '2px',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
+        paddingBottom: '100px',
       }}
     >
       <img src={imageUrl} alt="card image" />
       <Text
         h3
         css={{
+          whiteSpace: 'nowrap',
           color: 'black',
         }}
       >
